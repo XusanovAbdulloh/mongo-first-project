@@ -1,0 +1,36 @@
+### REGISTER USER
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "first_name": "Ali",
+  "last_name": "Musayev",
+  "username": "ali",
+  "password": "1234"
+}
+
+### LOGIN USER
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "ali",
+  "password": "1234"
+}
+
+### GET ME
+GET http://localhost:3000/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTI1N2EzYzBjMmExZDhjM2ZjOTg0In0sImlhdCI6MTY4OTg1NTM1N30.wiwMN3S1Mrjd2LfR_WvyO0d3DAlo-OQEmlqz8WUHfWg
+
+### PATCH ME
+PATCH http://localhost:3000/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTI1N2EzYzBjMmExZDhjM2ZjOTg0In0sImlhdCI6MTY4OTg1NTM1N30.wiwMN3S1Mrjd2LfR_WvyO0d3DAlo-OQEmlqz8WUHfWg
+Content-Type: application/json
+
+{
+  "first_name": "Usmon"
+}
+
+### DELETE ME
+DELETE http://localhost:3000/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTI1N2EzYzBjMmExZDhjM2ZjOTg0In0sImlhdCI6MTY4OTg1NTM1N30.wiwMN3S1Mrjd2LfR_WvyO0d3DAlo-OQEmlqz8WUHfWg

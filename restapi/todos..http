@@ -1,0 +1,32 @@
+### POST LIST
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
+Content-Type: application/json
+
+{
+    "name": "todooof",
+    "description": "toddoooo 3"
+}
+
+### Show todo
+GET  http://localhost:3000/todos/64b9681a7e9c0501b8d7d1a3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
+
+
+### get todos
+GET  http://localhost:3000/todos/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
+
+### edit todo
+PATCH  http://localhost:3000/todos/64b9681a7e9c0501b8d7d1a3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
+Content-Type: application/json
+
+{
+    "name": "todooo",
+    "description": "tod"
+}
+
+### delete todo
+DELETE   http://localhost:3000/todos/64b9681a7e9c0501b8d7d1a3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
