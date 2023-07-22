@@ -8,9 +8,16 @@ const showUser = async ({ id }) => {
             path: "lists",
             populate: {
                 path: "user",
-                select: "first_name",
+                select: "name",
             },
-        });
+        })
+        .populate({
+            path: "todos",
+            populate: {
+                path: "user",
+                select: "name",
+            },
+        })
 
     if (!user) {
         throw new NotFoundError("Foydalanuvchi topilmadi.");

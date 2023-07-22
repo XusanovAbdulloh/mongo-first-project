@@ -24,6 +24,11 @@ const userSchema = new mongoose.Schema(
             default: [],
             ref: "List",
         },
+        todos: {
+            type: [mongoose.SchemaTypes.ObjectId],
+            default: [],
+            ref: "Todo",
+        },
     },
     {
         versionKey: false,

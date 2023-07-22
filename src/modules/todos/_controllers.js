@@ -34,6 +34,7 @@ const postTodo = async (req, res, next) => {
 const getTodos = async (req, res, next) => {
     try {
         httpValidator({ query: req.query }, getTodosSchema);
+        console.log(req.user.id);
 
         const result = await todoLists({ user: req.user.id, ...req.query });
 

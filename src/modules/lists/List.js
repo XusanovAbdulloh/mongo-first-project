@@ -10,6 +10,11 @@ const listSchema = new mongoose.Schema(
             type: mongoose.SchemaTypes.ObjectId,
             ref: "User",
         },
+        todos: {
+            type: [mongoose.SchemaTypes.ObjectId],
+            default: [],
+            ref: "Todo",
+        },
     },
     {
         versionKey: false,

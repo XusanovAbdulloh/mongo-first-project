@@ -14,6 +14,10 @@ const todoSchema = new mongoose.Schema(
             type: mongoose.SchemaTypes.ObjectId,
             ref: "List",
         },
+        user: {
+            type: mongoose.SchemaTypes.ObjectId,
+            ref: "User",
+        },
     },
     {
         versionKey: false,
